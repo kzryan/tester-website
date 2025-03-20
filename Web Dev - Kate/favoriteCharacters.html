@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kate's Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fruktur:ital@0;1&family=Nabla&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>  
+    
+    <header>
+        
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        <h1>Favorite Characters</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"class="nav-link">Home</a></li>
+                <li><a href="about.html"class="nav-link">About Me</a></li>
+                <li><a href="aboutGrid.html"class="nav-link">About Me Grid Style</a></li>
+                <li><a href="favoriteCharacters.html"class="nav-link">Favorite Characters</a></li>
+                <li><a href="cats.html"class="nav-link">My Cats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tableSection">
+            <table>
+                <caption>Favorite Media Characters</caption>
+                <thead>
+                    <tr>
+                        <th>Character Name</th>
+                        <th>Media Type</th>
+                        <th>Title/Series</th>
+                        <th>Reason I Like Them</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lydia Deetz</td>
+                    <td>Horror Movie</td>
+                    <td>Beetlejuice</td>
+                    <td>Quirky, smart, and unapologetically goth</td>
+                    <td><img src="lydia-deetz.avif" alt="Lydia"></td>
+                </tr>
+                <tr>
+                    <td>Calcifer</td>
+                    <td>Animation</td>
+                    <td>Howl's Moving Castle</td>
+                    <td>A sassy, lovable fire demon</td>
+                    <td><img src="calcifer.jfif" alt="Calcifer"></td>
+                </tr>
+                <tr>
+                    <td>Donkey</td>
+                    <td>Animation</td>
+                    <td>Shrek</td>
+                    <td>Hilariously talkative and loyal</td>
+                    <td><img src="donkey.jfif" alt="Donkey"></td>
+                </tr>
+                <tr>
+                    <td>Wendy Torrance</td>
+                    <td>Horror Movie</td>
+                    <td>The Shining</td>
+                    <td>Resourceful and strong in the face of terror</td>
+                    <td><img src="wendy.jfif" alt="Wendy"></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/toggle-theme.js"></script>
+    <script src="js/nav-script.js"></script>
+</body>
+</html>
