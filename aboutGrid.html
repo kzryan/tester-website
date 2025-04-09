@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <style>
+            img {
+                width: 20%;
+                height: auto;
+            }
+
+            .nav {
+                grid-column: 1 / -1;
+            }
+            .about-container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns */
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header {
+                grid-column: 1 / -1; /* Spans all columns */
+                text-align: center;
+            }
+
+            .profile {
+                grid-column: 1 / span 4; /* Takes up 4 columns */
+            }
+
+            .bio {
+                grid-column: 5 / span 8; /* Takes up 8 columns */
+            }
+
+            .skills {
+                grid-column: 1 / -1; /* Spans all columns */
+            }
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .skill-item {
+                background: #f0f0f0;
+                padding: 15px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .navbar ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+                list-style: none;
+            }
+            .navbar li {
+                text-align: center;
+            }
+            
+            .navbar {
+                grid-area: nav;
+                background-color: #f7457a;
+                padding: 1rem;
+                /* Ensure nav spans full width */
+                grid-column: 1 / -1;
+            }
+            
+             Active State Styling 
+            .nav-link.active {
+                background-color: rgb(255, 239, 96);
+                color: black;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            } 
+            
+        </style>
+    </head>
+    <body>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="index.html"class="nav-link">Home</a></li>
+                <li><a href="about.html"class="nav-link">About Me</a></li>
+                <li><a href="aboutGrid.html"class="nav-link">About Me Grid Style</a></li>
+                <li><a href="favoriteCharacters.html"class="nav-link">Favorite Characters</a></li>
+                <li><a href="cats.html"class="nav-link">My Cats</a></li>
+            </ul>
+        </nav>
+        <div class="about-container">
+            <header class="header">
+                <h1>About Me</h1>
+            </header>
+    
+            <div class="profile">
+                <img src="images/aa404ba71462d76bbdcad5a20ac983fb-self-esteem-plant-cute-icon.webp" alt="Profile Photo">
+                <h2>Kate</h2>
+            </div>
+    
+            <div class="bio">
+                <p>I am a Computer Science teacher! I love tech and working with kids. :D</p>
+            </div>
+    
+            <div class="skills">
+                <h2>My Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Python</div>
+                    </div>
+            </div>
+        </div>
+        <script src="js/nav-script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kate's Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nabla&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nabla&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fruktur:ital@0;1&family=Nabla&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        <h1 id="animated-title">Kate's Website</h1>
+        <nav class = "navbar">
+           
+            <ul>
+                <li><a href="index.html"class="nav-link">Home</a></li>
+                <li><a href="about.html"class="nav-link">About Me</a></li>
+                <li><a href="aboutGrid.html"class="nav-link">About Me Grid Style</a></li>
+                <li><a href="favoriteCharacters.html"class="nav-link">Favorite Characters</a></li>
+                <li><a href="cats.html"class="nav-link">My Cats</a></li>
+            </ul>
+        </nav>
+        <div class="scrolling-text">
+            What are you doing in me swamp
+        </div>
+    </header>
+    <main>
+        <h2>Welcome!</h2>
+        <p>This is my current html/css tester website.</p>
+        <button onclick="alert('Why did the web developer go broke? Because he kept using up all his cache!')">Click Me For A Joke!</button>
+        <a href="form.html"><button>Give Me Feedback!</button></a>
+            <section class="aboutSection">
+                <div id="snake-game">
+                    <h2>Snake Game</h2>
+                    <canvas id="gameCanvas" width="400" height="400"></canvas>
+                    <div id="score">Score: 0</div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>© 2024</p>
+    </footer>
+    <script src="js/toggle-theme.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/titleAnimation.js"></script>
+    <script src="js/nav-script.js"></script>
+</body>
+</html>
